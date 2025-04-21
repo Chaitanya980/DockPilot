@@ -119,10 +119,8 @@ CMD ["python", "app.py"]
 ## 🚧 Future Improvements (Ideas)
 
 - Allow choosing **different base images** manually.
-- Add **Docker Compose** file generation.
 - Support **offline caching** of generated Dockerfiles.
 - Build and run Docker images automatically after generation.
-- Show a **progress spinner** during generation.
 
 ---
 
