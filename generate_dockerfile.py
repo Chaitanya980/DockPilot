@@ -40,15 +40,14 @@ def generate_dockerfile(language):
         raise Exception("Error: No valid response from model.")
 
 def save_files(project_name, dockerfile_content):
-    # Create project directory
     os.makedirs(project_name, exist_ok=True)
     
-    # Save Dockerfile
+    # Save the Dockerfile
     dockerfile_path = os.path.join(project_name, "Dockerfile")
     with open(dockerfile_path, "w") as f:
         f.write(dockerfile_content)
     
-    # Save .dockerignore
+    # Save  the .dockerignore
     dockerignore_path = os.path.join(project_name, ".dockerignore")
     with open(dockerignore_path, "w") as f:
         f.write(DOCKERIGNORE_CONTENT)
@@ -59,7 +58,7 @@ def save_files(project_name, dockerfile_content):
 
 if __name__ == '__main__':
     language = input("Enter the programming language: ")
-    project_name = input("Enter your project name: ").strip().replace(" ", "_")  # Clean project name
+    project_name = input("Enter your project name: ").strip().replace(" ", "_") 
     
     try:
         dockerfile = generate_dockerfile(language)
