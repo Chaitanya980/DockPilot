@@ -26,6 +26,7 @@ DockPilot allows you to:
 - Also creates a helpful **`.dockerignore`** file.
 - User-friendly prompts and clean error handling.
 - Fast local generation via **Ollama**.
+- Customizable Prompt: Easily adjust the PROMPT inside the code to include special requirements for your Dockerfile generation, based on your project’s unique needs.
 
 ---
 
@@ -33,7 +34,7 @@ DockPilot allows you to:
 
 - Python 3.8 or higher
 - [Ollama](https://ollama.com/) installed and running locally
-- A pulled LLaMA model (example: `llama3:2`)
+- A pulled LLaMA model (example: `llama3.1:8b`)
 - Python Ollama client installed:
   ```bash
   pip install ollama
@@ -45,7 +46,7 @@ DockPilot allows you to:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dockpilot.git
+   git clone https://github.com/Chaitanya980/dockpilot.git
    cd dockpilot
    ```
 
@@ -62,7 +63,7 @@ DockPilot allows you to:
 
 4. Pull the required model:
    ```bash
-   ollama pull llama3:2
+   ollama pull llama3.1:8b
    ```
 
 ---
@@ -152,13 +153,5 @@ CMD ["python", "main.py"]
 **Chaitanya Chaudhari**
 
 - [LinkedIn](https://www.linkedin.com/in/chaudhari-chaitanya)
-
 ---
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-> **DockPilot — Navigate your Docker builds effortlessly! 🚢**
